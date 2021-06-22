@@ -1,5 +1,5 @@
 import React from 'react'
-import BoxCard from './card.js'
+import BoxCard from './week-2/boxes/card.js'
 import './card.css'
 
 
