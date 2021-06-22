@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(137, 240, 89);
+    text-align: center;
+}
+#title{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size:x-large;
+    margin-top: 100px;
+}
+#list{
+    padding: 10px;
+    font-size: medium;
+}
