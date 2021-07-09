@@ -14,7 +14,7 @@ const ToDoForm = ({addToDo}) => {
         e.preventDefault();
         addToDo(userInput);
         setUserInput("");
-    }else{alert('Please enter a value')}
+    }else{alert('Need to add a task first !')}
     }  
 
     return(
