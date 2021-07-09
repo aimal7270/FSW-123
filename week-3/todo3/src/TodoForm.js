@@ -8,9 +8,7 @@ const ToDoForm = ({addToDo}) => {
         setUserInput(e.currentTarget.value)
     }
     const handleSubmit =e =>{
-        var input= e.currentTarget.children[0].children[0]
-        //console.log(e.currentTarget.children[0].children[0].value)
-    if(input.value !== ""){
+    if(e.currentTarget.value !== ""){
         e.preventDefault();
         addToDo(userInput);
         setUserInput("");
