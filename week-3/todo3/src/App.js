@@ -73,7 +73,7 @@ addToDo = (userInput) =>{
         )})
         return(
             <div>
-                <div id="title">TODO-4</div>
+                <div id="title">TODO-3</div>
                 <ToDoForm addToDo ={this.addToDo}/>
                 {todoList}
             

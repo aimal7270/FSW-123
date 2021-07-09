@@ -17,7 +17,7 @@ class TodoCard extends React.Component {
     return (
       <div id="list">
         <div className="delete-button">
-          <label for={this.props._id}>{this.props.text}</label>
+          <label style={{textDecoration: (this.props.isComplete === true ? 'line-through' :"none")}} for={this.props._id}>{this.props.text}</label>
           <input
             id={this.props.id}
             type="checkbox"
