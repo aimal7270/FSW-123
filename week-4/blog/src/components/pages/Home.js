@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom'
-
-const postdata = require('./data/Posts')
+import default postdata = ('../data/posts.JSON')
 
 function Home (){
     const posts = postdata.map(post => {

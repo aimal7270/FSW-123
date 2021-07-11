@@ -1,43 +1,35 @@
-*{
-    background-color:rgb(163, 153, 153);
-    text-align: center;
-
-    
+* {
+  background-color: rgb(163, 153, 153);
+  text-align: center;
 }
-#title{
-    font-weight: bold;
-    text-decoration: underline;
-    font-size:x-large;
-    margin-top: 100px;
-    background-color: white;
-    
+#title {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: x-large;
+  margin-top: 100px;
+  background-color: white;
 }
-#list{
-    padding: 10px;
-    font-size: medium;
-    color: rgb(24, 3, 48);
-    background-color: rgb(247, 236, 238);
-    margin: 0%;
-    border-radius: 0%;
-    
-
+#list {
+  padding: 10px;
+  font-size: medium;
+  color: rgb(24, 3, 48);
+  background-color: rgb(247, 236, 238);
+  margin: 0%;
+  border-radius: 0%;
 }
-#delete{
-    margin: 5px;
+#delete {
+  margin: 5px;
 }
-#form{
-    margin: 15px;
-    text-align: center;
-    color: rgb(17, 3, 3);
+#form {
+  margin: 15px;
+  text-align: center;
+  color: rgb(17, 3, 3);
 }
-#label{
-   padding: 10px;
+#label {
+  padding: 10px;
 }
 
-#new-task{
-    background-color: white;
-    margin: 5px;
+#new-task {
+  background-color: white;
+  margin: 5px;
 }
-
-
-

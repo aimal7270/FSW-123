@@ -1,34 +1,42 @@
-import React,  {useState} from 'react';
+import React, { useState } from "react";
 
+const ToDoForm = ({ addToDo }) => {
+  const [userInput, setUserInput] = useState("");
 
-const ToDoForm = ({addToDo}) => {
-    const [userInput, setUserInput] = useState('');
-
-    const handleChange =e =>{
-        setUserInput(e.currentTarget.value)
+  const handleChange = (e) => {
+    setUserInput(e.currentTarget.value);
+  };
+  const handleSubmit = (e) => {
+    var input = e.currentTarget.children[0].children[0];
+    //console.log(e.currentTarget.children[0].children[0].value)
+    if (input.value !== "") {
+      e.preventDefault();
+      addToDo(userInput);
+      setUserInput("");
+    } else {
+      alert("Need to add a task first !");
     }
-    const handleSubmit =e =>{
-        var input= e.currentTarget.children[0].children[0]
-        //console.log(e.currentTarget.children[0].children[0].value)
-    if(input.value !== ""){
-        e.preventDefault();
-        addToDo(userInput);
-        setUserInput("");
-    }else{alert('Need to add a task first !')}
-    }  
+  };
 
-    return(
-        <div className="container">
-            <form id='form' name='form' onSubmit={handleSubmit} > 
-                <label id="label"> 
-                Add Task: 
-                <input id="new-task" type = "text" name='text' value={userInput} onChange={handleChange}/>
-                </label>
-                <button id="button" type="Submit">Submit</button>
-                </form>
-        </div>
-        
-    )
-}
+  return (
+    <div className="container">
+      <form id="form" name="form" onSubmit={handleSubmit}>
+        <label id="label">
+          Add Task:
+          <input
+            id="new-task"
+            type="text"
+            name="text"
+            value={userInput}
+            onChange={handleChange}
+          />
+        </label>
+        <button id="button" type="Submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
 
-export default ToDoForm
+export default ToDoForm;
