@@ -1,10 +1,16 @@
 import React from "react";
+import EditForm from "./editForm";
 
 class TodoCard extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      edit: false,
+    };
   }
-
+  editbutton() {
+    this.setState({ edit: true });
+  }
   completeTodo() {
     this.props.completeTodo(this.props.id);
   }
@@ -14,7 +20,6 @@ class TodoCard extends React.Component {
 
   render() {
     return (
-      <div className="List-container">
       <div id="list">
         <div className="delete-button">
           <input
@@ -25,20 +30,28 @@ class TodoCard extends React.Component {
             }}
             checked={this.props.isComplete}
           />
-          <label
-            style={{
-              textDecoration:
-                this.props.isComplete === true ? "line-through" : "none",
-            }}
-            for={this.props._id}
-          >
-            {this.props.text}
-          </label>
+          {this.state.edit === true ? (
+            <EditForm
+              editToDo={this.props.editTodo}
+              currentValue={this.props.text}
+              id={this.props.id}
+            />
+          ) : (
+            <label
+              style={{
+                textDecoration:
+                  this.props.isComplete === true ? "line-through" : "none",
+              }}
+              for={this.props.id}
+            >
+              {this.props.text}
+            </label>
+          )}
 
           <button
             id="delete"
             onClick={() => {
-              this.deleteTodo();
+              this.editbutton();
             }}
           >
             Edit
@@ -53,7 +66,6 @@ class TodoCard extends React.Component {
             Delete
           </button>
         </div>
-      </div>
       </div>
     );
   }

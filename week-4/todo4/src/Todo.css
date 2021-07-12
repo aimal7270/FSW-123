@@ -9,12 +9,19 @@
   margin-top: 100px;
   background-color: white;
 }
+.List-container{
+  border: rgb(16, 17, 17) solid 1px;
+  border-radius: 50%;
+
+  
+}
+
 #list {
   padding: 10px;
   font-size: medium;
-  color: rgb(24, 3, 48);
+  color: rgb(10, 10, 10);
+  background-color: beige;
   background-color: rgb(247, 236, 238);
-  margin: 0%;
   border-radius: 0%;
 }
 #delete {

@@ -1,5 +1,5 @@
-import {useParams} from 'react-router'
-const postdata = require('../../data/posts.JSON')
+import {useParams} from 'react-router-dom'
+const postdata = require('../../data/posts.json')
  function Post(){
    
     let{slug}  = useParams(),

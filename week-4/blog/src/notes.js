@@ -83,7 +83,7 @@ function App() {
         </ul>
         <Switch>
             <Route expact path ={path}>
-                <h3>Select a blog post</h3>
+                <h3>Select a blog</h3>
             </Route>
             <Route path={`${path}/:postId`}>
                 <Post />
