@@ -14,7 +14,7 @@ const EditForm = ({ editToDo, currentValue, id }) => {
     if (input.value !== "") {
       e.preventDefault();
       editToDo(id, userInput);
-      setUserInput(id, currentValue);
+      setUserInput();
     } else {
       alert("Need to add a task first !");
     }
@@ -24,9 +24,9 @@ const EditForm = ({ editToDo, currentValue, id }) => {
     <div className="container">
       <form id="form" name="form" onSubmit={handleSubmit}>
         <label id="label">
-          Add Task:
+          Edit
           <input
-            id="new-task"
+            
             type="text"
             name="text"
             value={userInput}
