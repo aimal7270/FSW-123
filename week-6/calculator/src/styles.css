@@ -1,0 +1,64 @@
+*{
+    color: rgb(1, 46, 46);
+}
+
+#body{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: black 2px solid;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+button{
+    border: black 2px solid;
+    height: 80px;
+    padding: 10px;
+    background-color: rgb(250, 208, 208);
+    font-size: 20px;
+}
+.answer{
+    background-color: #f2ecf3;
+    height: 80px;
+    border: black 2px solid;
+    width: 420px;
+    font-size: 40px;
+    position: relative;
+
+}
+p{
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    
+}
+#AC{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: lightsteelblue;
+}
+#delete{
+    background-color: lightsteelblue;
+}
+#equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: cadetblue;
+}
+#multiply{
+    background-color: cadetblue;
+}
+#divide{
+    background-color: cadetblue;
+}
+#addition{
+    background-color: cadetblue;
+}
+#subtract{
+    background-color: cadetblue;
+}
+#decimal{
+    background-color: lightsteelblue;
+}
