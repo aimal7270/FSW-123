@@ -1,0 +1,72 @@
+body {
+  background-image: url(https://www.brandsynario.com/wp-content/uploads/2019/02/Turkish-Dramas-on-Netflix.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#form{
+  display: flex;
+  display: inline-block;
+ 
+}
+.Library{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#header {
+  color: rgb(167, 14, 14);
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  border-bottom: rgb(247, 243, 242) 3px solid;
+  font-size: larger;
+  margin: 25px;
+  padding: 10px;
+  font-size: 2em;
+}
+
+#hover:hover {
+  background-color: rgb(241, 236, 239);
+  border: rgb(252, 249, 248) solid 4px;
+  border-radius: 20px;
+}
+
+#title {
+  color: white;
+  border-bottom: rgb(250, 249, 249) 3px solid;
+  margin-left: 50%;
+  margin-right: 50%;
+  text-align: center;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#display {
+  background-image: url();
+  display: inline-block;
+  color:#fbfcfafd;
+  text-align: center;
+  border: #fcf2f085 solid 4px;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 25px;
+  align-items: baseline;
+  
+}
+
+input {
+  color: rgb(252, 11, 11);
+  margin-top: 50px;
+  margin: 20px;
+  font-size: 20px;
+}
+button {
+  color: rgba(243, 93, 19, 0.993);
+  font-size: 15px;
+  margin: 5px;
+}
